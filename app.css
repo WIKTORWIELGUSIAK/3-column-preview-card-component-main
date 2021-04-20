@@ -1,0 +1,114 @@
+/* My Code */
+    
+    
+body{
+    font-size: 15px;
+    min-width: 375px;
+    
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75); 
+}
+h1{
+    color:hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+}
+
+.sedans{
+    padding: 10%;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5% 5% 0 0;
+}
+.suvs{
+    padding: 10%;
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+    padding: 10%;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 5% 5% ;
+}
+.panel{
+    
+    padding: 50px 20px;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 120px;
+    border: 50px;
+    border-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    
+}
+
+.sedans-button{
+    color: hsl(31, 77%, 52%);
+}
+.suvs-button{
+    color:hsl(184, 100%, 22%);
+}
+.luxury-button{
+    color:hsl(179, 100%, 13%);
+}
+.sedans-button:hover{
+    color:hsl(0, 0%, 95%);
+    border: solid;
+    border-color:hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs-button:hover{
+    color:hsl(0, 0%, 95%);
+    border: solid;
+    border-color:hsl(0, 0%, 95%);
+    background-color:hsl(184, 100%, 22%);
+}
+.luxury-button:hover{
+    color:hsl(0, 0%, 95%);
+    border: solid;
+    border-color:hsl(0, 0%, 95%);
+    background-color:hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 1200px) {
+    .panel{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 150px 25% 0px 25%;
+    }
+    .sedans{
+        position: relative;
+        border-radius: 10px 0 0 10px;
+        width: 1fr;
+        height: 120%;
+        align-self:center ;
+        justify-self: left;
+        grid-column: 1/2;
+    }
+    .suvs{
+        position: relative;
+        width: 1fr;
+        height: 120%;
+        align-self:center ;
+        justify-self: center;
+        grid-column: 2/3;
+    }
+    .luxury{
+        position: relative;
+        border-radius: 0 10px 10px 0;
+        width: 1fr;
+        height: 120%;
+        align-self: center ;
+        justify-self: right;
+        grid-column: 3/4;
+    }
+    button {
+        position: absolute; 
+        bottom: 20px;
+    }
+    
+} 
