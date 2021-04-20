@@ -20,7 +20,7 @@ h1{
 .sedans{
     padding: 10%;
     background-color: hsl(31, 77%, 52%);
-    border-radius: 5% 5% 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .suvs{
     padding: 10%;
@@ -29,7 +29,7 @@ h1{
 .luxury{
     padding: 10%;
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0 0 5% 5% ;
+    border-radius: 0 0 10px 10px ;
 }
 .panel{
     
